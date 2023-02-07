@@ -5,12 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/slick.css">
     <title>Grizzly Canada</title>
 </head>
 <body>
     <header class="header white">
         <div class="container flex">
-            <div class="flex">
+            <div class="flex fix">
                 <a href="#" class="logo">
                     <div class="logo_img">
                         <img src="./images/logo.png" alt="alt">
@@ -61,26 +62,135 @@
                 </a>
             </div>
         </div>
+        <div class="catmenu">
+            <div class="profilenav_menu active">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <p class="catmenu_title">Categories</p>
+            <ul class="catmenu_list">
+                <li>
+                    <a href="#">
+                        <img src="./images/catmenu/taxidermy.png" alt="Taxidermy">
+                        <span>Taxidermy</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./images/catmenu/natural.png" alt="Natural claws (raw)">
+                        <span>Natural claws (raw)</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./images/catmenu/skins.png" alt="Skins">
+                        <span>Skins</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./images/catmenu/tails.png" alt="Tails">
+                        <span>Tails</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./images/catmenu/paws.png" alt="Paws">
+                        <span>Paws</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./images/catmenu/hooves.png" alt="Hooves">
+                        <span>Hooves</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./images/catmenu/shamanic.png" alt="Shamanic tools, artifacts, amulets">
+                        <span>Shamanic tools, artifacts, amulets</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./images/catmenu/products.png" alt="Products from natural fangs and claws in silver">
+                        <span>Products from natural fangs and claws in silver</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./images/catmenu/horns.png" alt="Horns">
+                        <span>Horns</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./images/catmenu/reptiles.png" alt="Reptiles">
+                        <span>Reptiles</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./images/catmenu/birds.png" alt="Birds and feathers">
+                        <span>Birds and feathers</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./images/catmenu/skulls.png" alt="Skulls, jaws">
+                        <span>Skulls, jaws</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./images/catmenu/clothing.png" alt="Clothing and accessories made of natural fur">
+                        <span>Clothing and accessories made of natural fur</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./images/catmenu/carpets.png" alt="Carpets made of natural fur">
+                        <span>Carpets made of natural fur</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./images/catmenu/other.png" alt="Other">
+                        <span>Other</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
     </header>
 
     <section class="mainbanner">
-        <div class="mainbanner_shadov"></div>
         <div class="container flex">
             <p class="mainbanner_text">Grizzly</p>
             <img class="mainbanne_img" src="./images/bear.png" alt="Bear">
             <p class="mainbanner_text">Canada</p>
         </div>
+        <a class="mainbanner_button" href="#skr">
+            <p>Categories</p>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M19.5 12L12 19.5L4.5 12" stroke="#4F4F4F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M19.5 4.5L12 12L4.5 4.5" stroke="#4F4F4F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </a>
+        <div class="mainbanner_shadov"></div>
     </section>
 
-    <section class="maincontent">
+    <section class="maincontent" id="skr">
+        <div class="fon_top"></div>
+        <div class="fon_bottom"></div>
         <div class="maincontent_fon">
             <div class="sheet1"></div>
             <div class="sheet2"></div>
             <div class="sheet3"></div>
         </div>
         <div class="container">
-            <h2 class="title">Categories</h2>
-            <div class="categories">
+            <h2 class="maincontent_title">Categories</h2>
+            <div class="categories pb">
                 <a href="#" class="categories_item item1">
                     <img src="./images/categories/taxidermy.png" alt="alt">
                     <p>Taxidermy</p>
@@ -142,8 +252,132 @@
                     <p>Other</p>
                 </a>
             </div>
-            <h2 class="title">Our videos</h2>
+            <h2 class="maincontent_title">Our videos</h2>
+            <div class="videos pb">
+                <div>
+                    <div class="videos_slid">
+                        <div class="videos_item">
+                            <video controls class="videos_content">
+                                <source src="./video/intro.MP4" type="video/mp4">
+                            </video>
+                            <p class="videos_title">Dapibus ultrices in iaculis nunc sed augue...</p>
+                        </div>
+                        <div class="videos_item">
+                            <video controls class="videos_content">
+                                <source src="./video/intro.MP4" type="video/mp4">
+                            </video>
+                            <p class="videos_title">Dapibus ultrices in iaculis nunc sed augue...</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="videos_slid">
+                        <div class="videos_item">
+                            <video controls class="videos_content">
+                                <source src="./video/intro.MP4" type="video/mp4">
+                            </video>
+                            <p class="videos_title">Dapibus ultrices in iaculis nunc sed augue...</p>
+                        </div>
+                        <div class="videos_item">
+                            <video controls class="videos_content">
+                                <source src="./video/intro.MP4" type="video/mp4">
+                            </video>
+                            <p class="videos_title">Dapibus ultrices in iaculis nunc sed augue...</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="videos_slid">
+                        <div class="videos_item">
+                            <video controls class="videos_content">
+                                <source src="./video/intro.MP4" type="video/mp4">
+                            </video>
+                            <p class="videos_title">Dapibus ultrices in iaculis nunc sed augue...</p>
+                        </div>
+                        <div class="videos_item">
+                            <video controls class="videos_content">
+                                <source src="./video/intro.MP4" type="video/mp4">
+                            </video>
+                            <p class="videos_title">Dapibus ultrices in iaculis nunc sed augue...</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="videos_slid">
+                        <div class="videos_item">
+                            <video controls class="videos_content">
+                                <source src="./video/intro.MP4" type="video/mp4">
+                            </video>
+                            <p class="videos_title">Dapibus ultrices in iaculis nunc sed augue...</p>
+                        </div>
+                        <div class="videos_item">
+                            <video controls class="videos_content">
+                                <source src="./video/intro.MP4" type="video/mp4">
+                            </video>
+                            <p class="videos_title">Dapibus ultrices in iaculis nunc sed augue...</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="flex">
+                <div class="flex">
+                    <a href="#" class="footer_logo">GrizzlyCanada</a>
+                    <ul class="menu">
+                        <li>
+                            <a href="#">About us</a>
+                        </li>
+                        <li>
+                            <a href="#">FAQ</a>
+                        </li>
+                        <li>
+                            <a href="#">Contacts</a>
+                        </li>
+                    </ul>
+                </div>
+                <ul class="social">
+                    <li>
+                        <a href="#">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M16 21C18.7614 21 21 18.7614 21 16C21 13.2386 18.7614 11 16 11C13.2386 11 11 13.2386 11 16C11 18.7614 13.2386 21 16 21Z" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+                                <path d="M21.5 4.5H10.5C7.18629 4.5 4.5 7.18629 4.5 10.5V21.5C4.5 24.8137 7.18629 27.5 10.5 27.5H21.5C24.8137 27.5 27.5 24.8137 27.5 21.5V10.5C27.5 7.18629 24.8137 4.5 21.5 4.5Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M22.5 11C23.3284 11 24 10.3284 24 9.5C24 8.67157 23.3284 8 22.5 8C21.6716 8 21 8.67157 21 9.5C21 10.3284 21.6716 11 22.5 11Z" fill="white"/>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M16 28C22.6274 28 28 22.6274 28 16C28 9.37258 22.6274 4 16 4C9.37258 4 4 9.37258 4 16C4 22.6274 9.37258 28 16 28Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M21 11H19C18.6056 10.9984 18.2147 11.0748 17.85 11.225C17.4853 11.3752 17.1539 11.5961 16.875 11.875C16.5961 12.1539 16.3752 12.4853 16.225 12.85C16.0748 13.2147 15.9984 13.6056 16 14V28" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M12 18H20" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="flex pbsr">
+                <p class="copyright">© 2023 Grizzly Canada</p>
+                <ul class="bootommenu">
+                    <li>
+                        <a href="#">Terms of Use</a>
+                    </li>
+                    <li>
+                        <a href="#">Confidentiality</a>
+                    </li>
+                    <li>
+                        <a href="#">Contract offer</a>
+                    </li> 
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/slick.min.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 </html>
