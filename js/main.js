@@ -17,11 +17,15 @@ $(document).on('click', '.profilenav_menu', function(e){
     let target_window = $('.catmenu');
     target_window.toggleClass('active');
 });
+$(document).on('click', '.history_item-header', function(e){
+    e.preventDefault();
+    let target = $(this).parents('.history_item');
+    target.toggleClass('active');
+});
 $(document).on('click', '.faq_item', function(e){
     e.preventDefault();
     $(this).toggleClass('active');
 });
-
 $(document).on('click', '.mainbanner_button', function(e){
     e.preventDefault();
     let id  = $(this).attr('href'),
